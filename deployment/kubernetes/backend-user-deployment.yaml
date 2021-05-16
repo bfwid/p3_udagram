@@ -8,10 +8,11 @@ spec:
   replicas: 2
   selector:
     matchLabels:
-      service: backend-user
+      app: backend-user
   template:
     metadata:
       labels:
+        app: backend-user
         service: backend-user
     spec:
       containers:
